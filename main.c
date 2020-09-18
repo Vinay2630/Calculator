@@ -110,7 +110,7 @@ void calculator_menu(void)
          case SQUARE_ROOT:
             printf("\n\tsqrt(%d) = %d\nEnter to continue", 
             calculator_operand1, 
-            square_root(calculator_operand1));
+            squareroot(calculator_operand1));
             
             __fpurge(stdin);
             getchar();
