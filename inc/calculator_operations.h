@@ -91,4 +91,12 @@ int inverse(int operand1);
 int currency(int operand1);
 
 
+/**
+*  multiply the operand1 with 12 and returns the result
+* @param[in] operand1 
+* @return Result of operand1 * 12
+*/
+int length(int operand1);
+
+
 #endif  /* #define __CALCULATOR_OPERATIONS_H__ */
