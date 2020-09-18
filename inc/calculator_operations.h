@@ -60,20 +60,27 @@ int power(int operand1, int operand2);
 /**
 * get square root of operand1 and returns the result 
 * @param[in] operand1 
-* @param[in] operand2 
-* @return integer value of the sqrt(operand1)
+* @return floating point value of the sqrt(operand1)
 */
-int squareroot(int operand1);
+float squareroot(int operand1);
 
 
 /**
 * get factorial of operand1 and returns the result 
 * @param[in] operand1 
-* @param[in] operand2 
 * @return integer value of the operand1!
 * @note returns 1 for factorial of 0
 */
 int factorial(int operand1);
+
+
+/**
+* divides 1 by operand1 and returns the result 
+* @param[in] operand1 
+* @return flating point value of the 1 / operand2
+* @note returns 0 for divide by 0 error
+*/
+int inverse(int operand1);
 
 
 #endif  /* #define __CALCULATOR_OPERATIONS_H__ */
