@@ -22,3 +22,8 @@ int divide(int operand1, int operand2)
     else
         return operand1 / operand2;
 }
+
+int square_root(int operand1)
+{
+    return sqrt(operand1);
+}
