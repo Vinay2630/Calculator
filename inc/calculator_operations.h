@@ -62,7 +62,7 @@ int power(int operand1, int operand2);
 * @param[in] operand1 
 * @return floating point value of the sqrt(operand1)
 */
-float squareroot(int operand1);
+int squareroot(int operand1);
 
 
 /**
