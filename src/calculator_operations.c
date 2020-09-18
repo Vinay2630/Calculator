@@ -50,7 +50,7 @@ int factorial(int operand1)
 
 float inverse(int operand1)
 {
-        if(0 == operand2)
+        if(0 == operand1)
         return 0;
     else
         return 1 / operand1;
