@@ -9,6 +9,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 #include <stdio_ext.h>
 
 /**
@@ -44,5 +45,14 @@ int multiply(int operand1, int operand2);
 * @note returns 0 for divide by 0 error
 */
 int divide(int operand1, int operand2);
+
+
+/**
+*  get square root of operand1 and returns the result
+* @param[in] operand1 
+* @return Result of sqrt(operand1)
+*/
+int square_root(int operand1);
+
 
 #endif  /* #define __CALCULATOR_OPERATIONS_H__ */
