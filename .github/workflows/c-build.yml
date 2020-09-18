@@ -17,4 +17,4 @@ jobs:
       run:  sudo apt-get install -y libmath-libm-perl
             
     - name: make all
-      run:  make all
+      run:  make all -C Calculator
