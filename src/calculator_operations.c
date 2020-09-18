@@ -37,3 +37,13 @@ int squareroot(int operand1)
 {
     return sqrt(operand1);
 }
+
+int factorial(int operand1)
+{
+    int i,fact=1;
+    for(i=1;i<=operand1;i++)
+    {
+        fact=fact*i;
+    }
+    return fact;
+}
