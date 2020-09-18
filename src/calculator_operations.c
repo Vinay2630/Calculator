@@ -60,3 +60,8 @@ int currency(int operand1)
 {
     return operand1 * 74;
 }
+
+int length(int operand1)
+{
+    return operand1 * 12;
+}
