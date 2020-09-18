@@ -98,7 +98,7 @@ void calculator_menu(void)
             getchar();
             break;
         case SQUARE_ROOT:
-            printf("\n\t%d / %d = %d\nEnter to continue", 
+            printf("\n\tsqrt(%d) = %d\nEnter to continue", 
             calculator_operand1, 
             square_root(calculator_operand1));
             
