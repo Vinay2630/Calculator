@@ -32,3 +32,8 @@ int power(int operand1, int operand2)
     else
         return pow(operand1,operand2);
 }
+
+int squareroot(int operand1)
+{
+    return sqrt(operand1);
+}
