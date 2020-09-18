@@ -13,7 +13,7 @@ int calculator_operand1 = 0;
 int calculator_operand2 = 0;
 
 /* Valid operations */
-enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE, POWER, EXIT };
+enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE, POWER, SQUARE_ROOT, EXIT };
 
 /* Display the menu of operations supported */
 void calculator_menu(void);
@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 void calculator_menu(void)
 {
     printf("\nAvailable Operations\n");
-    printf("\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5. Power\n6. Exit");
+    printf("\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5. Power\n6. Square_root\n7. Exit");
     printf("\n\tEnter your choice\n");
    
      __fpurge(stdin);
@@ -99,15 +99,23 @@ void calculator_menu(void)
             getchar();
             break;
          case POWER:
-            printf("\n\t%d / %d = %d\nEnter to continue", 
+            printf("\n\t%d ^ %d = %d\nEnter to continue", 
             calculator_operand1, 
             calculator_operand2,
             power(calculator_operand1, calculator_operand2));
             
             __fpurge(stdin);
             getchar();
-            break;         
-        case 6:
+            break;
+         case SQUARE_ROOT:
+            printf("\n\tsqrt(%d) = %d\nEnter to continue", 
+            calculator_operand1, 
+            square_root(calculator_operand1));
+            
+            __fpurge(stdin);
+            getchar();
+            break;        
+        case 7:
             exit(0);
             break;
         default:
