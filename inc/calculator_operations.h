@@ -83,4 +83,12 @@ int factorial(int operand1);
 int inverse(int operand1);
 
 
+/**
+*  multiply the operand1 with 74 and returns the result
+* @param[in] operand1 
+* @return Result of operand1 * 74
+*/
+int currency(int operand1);
+
+
 #endif  /* #define __CALCULATOR_OPERATIONS_H__ */
