@@ -108,7 +108,7 @@ void calculator_menu(void)
             getchar();
             break;
          case SQUARE_ROOT:
-            printf("\n\tsqrt(%d) = %f\nEnter to continue", 
+            printf("\n\tsqrt(%d) = %d\nEnter to continue", 
             calculator_operand1, 
             squareroot(calculator_operand1));
             
@@ -124,7 +124,7 @@ void calculator_menu(void)
             getchar();
             break;
           case INVERSE:
-            printf("\n\t1 / %d = %f\nEnter to continue", 
+            printf("\n\t1 / %d = %d\nEnter to continue", 
             calculator_operand1, 
             inverse(calculator_operand1));
             
