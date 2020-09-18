@@ -57,4 +57,13 @@ int divide(int operand1, int operand2);
 int power(int operand1, int operand2);
 
 
+/**
+* get square root of operand1 and returns the result 
+* @param[in] operand1 
+* @param[in] operand2 
+* @return integer value of the sqrt(operand1) 
+*/
+int squareroot(int operand1, int operand2);
+
+
 #endif  /* #define __CALCULATOR_OPERATIONS_H__ */
