@@ -23,7 +23,12 @@ int divide(int operand1, int operand2)
         return operand1 / operand2;
 }
 
-int square_root(int operand1)
+int power(int operand1, int operand2)
 {
-    return sqrt(operand1);
+    if(0 == operand2)
+        return 1;
+    if(1 == operand2)
+        return operand1;
+    else
+        return pow(operand1,operand2);
 }
