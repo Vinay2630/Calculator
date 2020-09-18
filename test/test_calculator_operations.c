@@ -112,21 +112,21 @@ void test_factorial(void) {
   CU_ASSERT(10== factorial(3));
 }
 
-void inverse(void) {
+void test_inverse(void) {
   CU_ASSERT(1== inverse(1));
   
   /* Dummy fail*/
   CU_ASSERT(2==inverse(3));
 }
 
-void currency(void) {
+void test_currency(void) {
   CU_ASSERT(74== currency(1));
   
   /* Dummy fail*/
   CU_ASSERT(100==currency(3));
 }
 
-void length(void) {
+void test_length(void) {
   CU_ASSERT(24== length(2));
   
   /* Dummy fail*/
