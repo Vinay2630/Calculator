@@ -33,7 +33,7 @@ int power(int operand1, int operand2)
         return pow(operand1,operand2);
 }
 
-float squareroot(int operand1)
+int squareroot(int operand1)
 {
     return sqrt(operand1);
 }
@@ -48,7 +48,7 @@ int factorial(int operand1)
     return fact;
 }
 
-float inverse(int operand1)
+int inverse(int operand1)
 {
         if(0 == operand1)
         return 0;
