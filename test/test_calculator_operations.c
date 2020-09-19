@@ -17,6 +17,7 @@ void test_factorial(void);
 void test_inverse(void);
 void test_currency(void);
 void test_length(void);
+void test_time(void);
 
 /* Start of the application test */
 int main() {
@@ -40,6 +41,7 @@ int main() {
   CU_add_test(suite, "inverse", test_inverse);
   CU_add_test(suite, "currency", test_currency);
   CU_add_test(suite, "length", test_length);
+  CU_add_test(suite, "time", test_time);
 
 
 /* Note: Do not edit START*/
@@ -131,4 +133,11 @@ void test_length(void) {
   
   /* Dummy fail*/
   CU_ASSERT(30==length(3));
+}
+
+void test_time(void) {
+  CU_ASSERT(120== time(2));
+  
+  /* Dummy fail*/
+  CU_ASSERT(130==time(3));
 }
