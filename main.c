@@ -13,7 +13,7 @@ int calculator_operand1 = 0;
 int calculator_operand2 = 0;
 
 /* Valid operations */
-enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE, MODULO, POWER, SQUARE_ROOT, FACTORIAL, INVERSE, CURRENCY, LENGTH, EXIT };
+enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE, MODULO, POWER, SQUARE_ROOT, FACTORIAL, INVERSE, CURRENCY, LENGTH, TIME, EXIT };
 
 /* Display the menu of operations supported */
 void calculator_menu(void);
@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 void calculator_menu(void)
 {
     printf("\nAvailable Operations\n");
-    printf("\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5. Modulo\n6. Power\n7. Square_root\n8. Factorial\n9. Inverse\n10. Currency\n11. Length\n12. Exit");
+    printf("\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5. Modulo\n6. Power\n7. Square_root\n8. Factorial\n9. Inverse\n10. Currency\n11. Length\n12. Time\n13. Exit");
     printf("\n\tEnter your choice\n");
    
      __fpurge(stdin);
@@ -156,7 +156,15 @@ void calculator_menu(void)
             __fpurge(stdin);
             getchar();
             break;
-      case 12:
+        case TIME:
+            printf("\n\t%d Hours = %d Minutes\nEnter to continue", 
+            calculator_operand1, 
+            time(calculator_operand1));
+            
+            __fpurge(stdin);
+            getchar();
+            break;
+      case 13:
             exit(0);
             break;
         default:
