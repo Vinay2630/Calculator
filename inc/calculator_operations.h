@@ -109,4 +109,12 @@ int currency(int operand1);
 int length(int operand1);
 
 
+/**
+*  multiply the operand1 with 60 and returns the result
+* @param[in] operand1 
+* @return Result of operand1 * 60
+*/
+int time(int operand1);
+
+
 #endif  /* #define __CALCULATOR_OPERATIONS_H__ */
