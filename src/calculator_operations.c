@@ -73,3 +73,8 @@ int length(int operand1)
 {
     return operand1 * 12;
 }
+
+int time(int operand1)
+{
+    return operand1 * 60;
+}
