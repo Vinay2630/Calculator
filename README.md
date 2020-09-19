@@ -7,3 +7,5 @@
 ![C/C++ CI](https://github.com/Vinay2630/Calculator/workflows/C/C++%20CI/badge.svg)
 
 ![Unit testing](https://github.com/Vinay2630/Calculator/workflows/Unit%20testing/badge.svg)
+
+Reference: https://github.com/stepin654321/MiniProject_Template
